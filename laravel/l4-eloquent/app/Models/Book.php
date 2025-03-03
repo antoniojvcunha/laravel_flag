@@ -6,8 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    //por defeito a tabela vem com nome no plural, mas podemos configurar nos o nome
+    // por defeito vai buscar o plural, mas podemos sempre config o nome de tabela que quisermos
     protected $table = 'books';
 
-    protected $fillable = ['title', 'author', 'isbn'];
+    protected $fillable = [
+        'title',
+        'author',
+        'isbn'
+    ];
 }
