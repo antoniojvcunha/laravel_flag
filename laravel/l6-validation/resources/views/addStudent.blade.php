@@ -9,6 +9,9 @@
     <form action="" method="post">
         @csrf
         <input type="text" placeholder="First name" name="firstName">
+        @error('firstName')
+        <div>erro no nome</div>
+        @enderror
         <br>
         <input type="text" placeholder="Last name" name="lastName">
         <br>
